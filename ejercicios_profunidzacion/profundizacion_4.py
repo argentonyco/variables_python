@@ -42,17 +42,18 @@ https://www.pythonforbeginners.com/dictionary/python-split
 
 Cualquier duda con el método split pueden consultarla por el campus
 '''
+
 print('Jugando con texto')
 # Empezar aquí la resolución del ejercicio
 
 print('Ingrese el nombre y apellido de su padre: ')
 padre = input()
-apellido_padre = padre.split(' ', 2)
+nom_padre, ape_padre = padre.split()
+
 print('Ingrese el nombre y apellido de su madre: ')
 madre = input()
-
-print ('Ingrese su monbre:')
+nom_madre, ape_madre = madre.split()
+print ('Ingrese su nombre:')
 hijo = input()
-print(apellido_padre)
-
-nombre_completo = ('Su nombre completo es: ', )
+nombre_completo = hijo  + ' ' + ape_padre + ' '  + ape_madre
+print ('Su nombre completo es: ', nombre_completo.capitalize() )
